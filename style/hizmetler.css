@@ -1,0 +1,87 @@
+/* bu sayfada dropdownun acık kalması ıcın .dropdown-menu kısmına dısplay:block eklendi kurumsalın dısında fazlalık odur*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+h1 {
+    color: #555;
+    letter-spacing: 2px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #ffffff;
+    color: #ffffff;
+    padding: 20px;
+    height: 100vh;
+    margin-left: 10%;
+}
+
+.nav ul {
+    margin-top: 10%;
+    list-style: none;
+    padding: 0;
+    margin-left: 5px;
+
+
+}
+
+.nav li {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    margin-top: 20%;
+
+}
+
+.nav a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    color: black;
+    margin-left: 5px;
+    font-size: larger;
+    font-weight: 600;
+
+}
+
+.nav a:hover {
+    background-color: #555;
+    transition: transform 0.7s ease;
+    color: #fff;
+    border-radius: 22px;
+    transform: translateX(30px);
+    height: 30px;
+    padding-left: 30px;
+    padding-top: 5px;
+
+}
+
+/* dropdow acık kalsın diye*/
+.dropdown-menu {
+
+    margin-left: 20px;
+    display: block;
+
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.submenu {
+    display: none;
+}
+
+/* Hizmetler öğesine tıklanıldığında alt menüyü görünür yap */
+li:hover .submenu {
+    display: block;
+}

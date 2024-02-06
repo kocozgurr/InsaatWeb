@@ -1,0 +1,120 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* CONT DİVİ SİDEBARI VE ACIKLAMA KISMINI KAPLADI VE YAN YANA OZELLİGİ VERDİ*/
+.contt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: fit-content;
+}
+
+
+h1 {
+    color: #555;
+    letter-spacing: 2px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #ffffff;
+    color: #ffffff;
+    padding: 20px;
+    height: 100vh;
+    margin-left: 10%;
+
+}
+
+.tanım {
+    margin: 60px;
+    width: fit-content;
+}
+
+.tanım p {
+    font-size: x-large;
+    margin-top: 1%;
+    font-weight: 500;
+}
+
+.tanım h1 {
+    font-weight: bold;
+}
+
+.nav ul {
+    margin-top: 20%;
+    list-style: none;
+    padding: 0;
+    margin-left: 5px;
+
+
+
+
+}
+
+.nav li {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    margin-top: 20%;
+
+}
+
+.nav a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    color: black;
+    margin-left: 5px;
+    font-size: larger;
+    font-weight: 600;
+
+}
+
+.nav a:hover {
+    background-color: #555;
+    transition: 0.7s ease;
+    /* anımasyonun hızı*/
+    color: #fff;
+    border-radius: 22px;
+    transform: translateX(30px);
+    height: 50px;
+    padding-left: 30px;
+    padding-top: 5px;
+
+
+}
+
+.dropdown-menu {
+    display: none;
+    margin-left: 20px;
+
+
+}
+
+.dropdown-menu li a {
+    color: gray;
+    margin-left: 55px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.submenu {
+    display: none;
+}
+
+/* Hizmetler öğesine tıklanıldığında alt menüyü görünür yap */
+li:hover .submenu {
+    display: block;
+}

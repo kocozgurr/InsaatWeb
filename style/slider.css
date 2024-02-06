@@ -1,0 +1,85 @@
+.slider {
+    position: relative;
+    z-index: 1;
+}
+
+.slide {
+    position: relative;
+}
+
+video {
+    width: 100%;
+}
+
+.slider-button {
+    position: initial;
+    width: 200px;
+    height: 50px;
+    background-color: #d2cc14;
+    color: #fff;
+    font-size: larger;
+    border-radius: 15px;
+    border-color: #fff;
+
+}
+
+.slide-text {
+    position: absolute;
+    /*video uzerine koyduk*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(74, 73, 73, 0.5);
+    /* Metin arka plan rengi */
+    padding: 20px;
+    color: #fff;
+    /* Metin rengi */
+}
+
+.slide-text h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.slide-text p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.slider-controls {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/*ok butonları*/
+.slider-controls button {
+    background-color: transparent;
+    border: none;
+    font-size: 34px;
+    color: #d2cc14;
+    cursor: pointer;
+    margin-top: 20%;
+    z-index: 2;
+
+
+}
+
+/* Ok simgeleri için özel stiller */
+.slider-controls button.prev {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+}
+
+.slider-controls button.next {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+a button :hover {
+    background-color: #d2cc14;
+}

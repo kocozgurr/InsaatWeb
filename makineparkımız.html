@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/styles.css" type="text/css">
+    <link rel="stylesheet" href="style/slider.css" type="text/css">
+    <link rel="shortcut icon" type="image/ico" href="Assets/b.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+
+
+    <script>
+        $(document).ready(function ()
+        {
+            $(".photo a").fancybox({
+                caption: function (instance, item)
+                {
+                    return $(this).next('.photo-caption').html(); // Metin içeren öğeyi alın
+                },
+                afterShow: function (instance, item)
+                {
+                    instance.$caption.css('visibility', 'visible'); // Metni görünür yapın
+                },
+            });
+        });
+    </script>
+    <title>Makina Parkımız</title>
+</head>
+<style>
+    @media only screen and (max-width: 900px) {
+        iframe {
+            width: 280px;
+        }
+
+        .photo {
+            border-bottom: 2px solid black;
+        }
+
+        .phone-number a {
+            visibility: collapse;
+        }
+
+        .container2 {
+            height: 180px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+
+        }
+
+        .container {
+
+            text-align: center;
+            align-items: center;
+
+        }
+
+        .menu2 {
+
+
+            margin-left: 10px;
+        }
+
+        .menu2 li {
+            margin: 20px;
+
+        }
+
+
+        .tanım {
+
+            width: 40%;
+        }
+
+        .tanım p {
+            font-size: 12px;
+            margin-left: -30px;
+            margin-top: 10px;
+        }
+
+        .tanım h1 {
+            font-size: 16px;
+            margin-left: -30px;
+        }
+
+        .sidebar {
+            width: 40%;
+            margin-left: -10px;
+
+        }
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #c8c8c8;
+        padding: 0;
+
+    }
+
+
+    .bordered-table {
+        border-collapse: collapse;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    table {
+        border: 1px solid #000;
+
+    }
+
+    .bordered-table th,
+    .bordered-table td {
+        border: 1px solid #000;
+        /* Çizgi rengi ve kalınlığını ayarlayabilirsiniz */
+        padding-right: 200px;
+        padding-bottom: 30px;
+        padding-top: 30px;
+        /* Hücre içeriği ile çizgi arasındaki boşluğu ayarlayabilirsiniz */
+    }
+
+    .image-container img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .image-container {
+        position: relative;
+    }
+
+    .baslik {
+        position: absolute;
+        /* Mutlak konumlandırma */
+        top: 0;
+        /* Üst kenara hizala */
+        left: 0;
+        /* Sol kenara hizala */
+        margin: 7%;
+        color: white;
+        /* Başlık metin rengi (isteğe bağlı) */
+        padding: 5px;
+        /* Başlık içeriği etrafında boşluk (isteğe bağlı) */
+    }
+
+
+
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+
+    }
+
+
+
+
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+
+    }
+
+    nav ul li:last-child {
+        margin-right: 0;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    @media only screen and (max-width: 900px) {
+        header {
+            width: 100%;
+        }
+
+        .gallery {
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        .projeler-menu {
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            height: 80px;
+            margin-left: 60px;
+
+        }
+
+        .projeler-menu ul {
+            display: flex;
+            flex-direction: column;
+            margin-left: 40px;
+            gap: 10px;
+        }
+
+
+        .projeler-menu ul li {
+            text-align: justify;
+            margin-top: 1px;
+
+        }
+
+    }
+</style>
+<header>
+    <section class="container1">
+        <nav class="header-container">
+            <div class="header-left">
+                <ul class="menu">
+                    <li><a href="index.html">Anasayfa</a></li>
+                    <li><a href="kurumsal.html">Kurumsal</a></li>
+                    <li><a href="iletisim.html">İletişim</a></li>
+                </ul>
+            </div>
+            <div class="header-right">
+                <div class="phone-number">
+                    <a href="tel:+905555549095"><i class="fa fa-phone" aria-hidden="true"></i> 05555549095</a>
+                    <br><br>
+                    <a href="tel:+9005530291070"><i class="fa fa-phone" aria-hidden="true"></i> 05530291070</a>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Arama yap..." />
+                    <button><i class="fa fa-search" aria-hidden="true"></i></button>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <div class="container2">
+        <div class="container">
+            <div class="logo_div">
+                <a href="index.html">
+                    <img class="logo" src="Assets/BurkadLogo.jpg" alt="Burkad inşaat" title="Burkad İnşaat" />
+                </a>
+            </div>
+            <ul class="menu2">
+
+                <li class="dropdown">
+                    <a href="kurumsal.html">Kurumsal</a>
+                    <ul class="submenu">
+
+                        <li><a href="kalite-politikamiz.html">Kalite Politikamız</a></li>
+                        <li><a href="iletisim.html">İnsan Kaynakları</a></li>
+                        <li><a href="iletisim.html">İletişim</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="projeler.html">Projeler</a>
+
+                </li>
+                <li><a href="uygulamalar.html">Uygulamalar</a></li>
+                <li><a href="makineparkımız.html">Makina Parkımız</a></li>
+
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </div>
+    </div>
+
+</header>
+
+<body>
+    <div class="image-container">
+        <img class="gorsel" src="./Assets/aa.jpg" alt="Açıklama Metni">
+        <h1 class="baslik">Makina Parkımız </h1>
+
+    </div>
+    <!-- Proje içerikleri buraya gelecek -->
+    <div style="display: flex; justify-content: center; align-items: center;margin-top: 1%;">
+        <div
+            style="background-color: rgb(255, 255, 255); text-align: center; border-radius: 300px; width: 50%; padding: 20px;">
+            <h1 style="font-weight: 800; font-family: Verdana, Geneva, Tahoma, sans-serif; color: rgb(123, 127, 222);">
+                Makina Parkımız</h1>
+        </div>
+    </div>
+    <div class="gallery">
+        <div class="photo">
+            <a data-fancybox="gallery1" data-src="#table1" href="javascript:;">
+                <img src="Assets/m1.png" alt="Fotoğraf 1">
+            </a>
+            <div class="photo-caption">
+                <h2>Arazi Taşıtı</h2>
+            </div>
+        </div>
+        <div class="photo">
+            <a data-fancybox="gallery2" data-src="#table2" href="javascript:;">
+                <img src="Assets/m2.png" alt="Fotoğraf 1">
+            </a>
+            <div class="photo-caption">
+                <h2>Kazıcı Yükleyici</h2>
+            </div>
+
+        </div>
+        <div class="photo">
+            <a data-fancybox="gallery3" data-src="#table3" href="javascript:;">
+                <img src="Assets/m3.png" alt="Fotoğraf 1">
+            </a>
+            <div class="photo-caption">
+                <h2>GPS&Total Station</h2>
+            </div>
+
+        </div>
+        <div class="photo">
+            <a data-fancybox="gallery4" data-src="#table4" href="javascript:;">
+                <img src="Assets/m4.png" alt="Fotoğraf 1">
+            </a>
+            <div class="photo-caption">
+                <h2>Silindir</h2>
+            </div>
+
+        </div>
+
+
+        <div class="photo">
+            <a data-fancybox="gallery5" data-src="#table5" href="javascript:;">
+                <img src="Assets/m5.png" alt="Fotoğraf 1">
+            </a>
+            <div class="photo-caption">
+                <h2>Ekskavatör</h2>
+            </div>
+
+        </div>
+        <div class="photo">
+            <a data-fancybox="gallery6" data-src="#table6" href="javascript:;">
+                <img src="Assets/m6.png" alt="Fotoğraf 1">
+            </a>
+            <div class="photo-caption">
+                <h2>Binek Araç</h2>
+            </div>
+
+
+        </div>
+        <div class="photo">
+            <a data-fancybox="gallery7" data-src="#table7" href="javascript:;">
+                <img src="Assets/m7.png" alt="Fotoğraf 1">
+            </a>
+            <div class="photo-caption">
+                <h2>Greyder</h2>
+            </div>
+
+        </div>
+        <div class="photo">
+            <a data-fancybox="gallery8" data-src="#table8" href="javascript:;">
+                <img src="Assets/m8.png" alt="Fotoğraf 1">
+            </a>
+            <div class="photo-caption">
+                <h2>Kamyon</h2>
+            </div>
+
+        </div>
+        <div class="photo">
+            <a data-fancybox="gallery9" data-src="#table9" href="javascript:;">
+                <img src="Assets/m9.png" alt="Fotoğraf 1">
+            </a>
+            <div class="photo-caption">
+                <h2>Çekici</h2>
+            </div>
+
+        </div>
+
+    </div>
+    <div>
+        <div class="bordered-table" style="display:none;" id="table1">
+
+            <table>
+
+                <thead>
+                    <h2>Arazi Aracı</h2>
+                    <tr>
+                        <th>CİNS</th>
+                        <th>MARKA</th>
+                        <th>MODEL</th>
+                        <th>ADET</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ARAZİ TAŞITI</td>
+                        <td>DACIA DUSTER 4X4</td>
+                        <td>2016</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>ARAZİ TAŞITI</td>
+                        <td>FORD RANGER 4X4</td>
+                        <td>2015</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>ARAZİ TAŞITI</td>
+                        <td>NİSSAN NAVARA 4X4</td>
+                        <td>2017</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>ARAZİ TAŞITI</td>
+                        <td>TOYOTA HILUX 4X4</td>
+                        <td>2017</td>
+                        <td>2</td>
+                    </tr>
+                    <!-- Diğer veriler -->
+                </tbody>
+            </table>
+
+
+        </div>
+        <!-- Diğer tablolar -->
+        <div class="bordered-table" style="display:none;" id="table2">
+
+            <table>
+
+                <thead>
+                    <h2>Kazıcı Yükleyici</h2>
+                    <tr>
+                        <th>CİNS</th>
+                        <th>MARKA</th>
+                        <th>MODEL</th>
+                        <th>ADET</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>KAZICI YÜKLEYİCİ</td>
+                        <td> JCB 4CX</td>
+                        <td>2014</td>
+                        <td>2</td>
+                    </tr>
+
+                    <!-- Diğer veriler -->
+                </tbody>
+            </table>
+
+
+        </div>
+        <div class="bordered-table" style="display:none;" id="table3">
+
+            <table>
+
+                <thead>
+                    <h2>GPS&Total Station</h2>
+                    <tr>
+                        <th>CİNS</th>
+                        <th>MARKA</th>
+                        <th>MODEL</th>
+                        <th>ADET</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>TOTAL STATION</td>
+                        <td>TOPCON</td>
+                        <td>2014</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>GPS</td>
+                        <td>SATLAB</td>
+                        <td>2014</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>EL GPS</td>
+                        <td>MAGELLAN</td>
+                        <td>2012</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>TABLET GPS</td>
+                        <td>İPAD AIR PRO</td>
+                        <td>2016</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>NİVO</td>
+                        <td>TOPCON</td>
+                        <td>2014</td>
+                        <td>4</td>
+                    </tr>
+                    <!-- Diğer veriler -->
+                </tbody>
+            </table>
+
+
+        </div>
+        <div class="bordered-table" style="display:none;" id="table4">
+
+            <table>
+
+                <thead>
+                    <h2>Silindir</h2>
+                    <tr>
+                        <th>CİNS</th>
+                        <th>MARKA</th>
+                        <th>MODEL</th>
+                        <th>ADET</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>SİLİNDİR</td>
+                        <td> CAT CS 54</td>
+                        <td> 2012</td>
+                        <td>3</td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+
+        </div>
+        <div class="bordered-table" style="display:none;" id="table5">
+
+            <table>
+
+                <thead>
+                    <h2>Ekskavatör</h2>
+                    <tr>
+                        <th>CİNS</th>
+                        <th>MARKA</th>
+                        <th>MODEL</th>
+                        <th>ADET</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>EKSKAVATÖR</td>
+                        <td>CAT 336 L2</td>
+                        <td>2016</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>EKSKAVATÖR</td>
+                        <td>CAT 330D2L</td>
+                        <td>2017</td>
+                        <td>2</td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+
+        </div>
+        <div class="bordered-table" style="display:none;" id="table6">
+
+            <table>
+
+                <thead>
+                    <h2>Binek Araç</h2>
+                    <tr>
+                        <th>CİNS</th>
+                        <th>MARKA</th>
+                        <th>MODEL</th>
+                        <th>ADET</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>BİNEK ARAÇ</td>
+                        <td>MERCEDES VİTO</td>
+                        <td>2016</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>BİNEK ARAÇ</td>
+                        <td>MEGANE</td>
+                        <td>2016</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>BİNEK ARAÇ</td>
+                        <td>FORD TRANSİT</td>
+                        <td>2016</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>BİNEK ARAÇ</td>
+                        <td>VOLSWAGEN CADDY</td>
+                        <td>2014</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>BİNEK ARAÇ</td>
+                        <td>PEUGEOT 301</td>
+                        <td>2017</td>
+                        <td>2</td>
+                    </tr>
+                    <!-- Diğer veriler -->
+                </tbody>
+            </table>
+
+
+        </div>
+        <div class="bordered-table" style="display:none;" id="table7">
+
+            <table>
+
+                <thead>
+                    <h2>Greyder</h2>
+                    <tr>
+                        <th>CİNS</th>
+                        <th>MARKA</th>
+                        <th>MODEL</th>
+                        <th>ADET</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>GREYDER</td>
+                        <td> CAT 140 M</td>
+                        <td>2012</td>
+                        <td>3</td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+
+        </div>
+        <div class="bordered-table" style="display:none;" id="table8">
+
+            <table>
+
+                <thead>
+                    <h2>Kamyon</h2>
+                    <tr>
+                        <th>CİNS</th>
+                        <th>MARKA</th>
+                        <th>MODEL</th>
+                        <th>ADET</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>KAMYON</td>
+                        <td>MERCEDES AXOR 3340</td>
+                        <td>2014</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>KAMYON</td>
+                        <td>FORD 4142D</td>
+                        <td>2017</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>KAMYON</td>
+                        <td> ISUZU NPR 8 MAZOT TANKERİ</td>
+                        <td>2013</td>
+                        <td>1</td>
+                    </tr>
+
+                    <!-- Diğer veriler -->
+                </tbody>
+            </table>
+
+
+        </div>
+        <div class="bordered-table" style="display:none;" id="table9">
+
+            <table>
+
+                <thead>
+                    <h2>Çekici</h2>
+                    <tr>
+                        <th>CİNS</th>
+                        <th>MARKA</th>
+                        <th>MODEL</th>
+                        <th>ADET</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ÇEKİCİ</td>
+                        <td>MERCEDES AXOR 1840 LS</td>
+                        <td>2012</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>LOWBED</td>
+                        <td>TIREYLER 3 AKS</td>
+                        <td>2012</td>
+                        <td>1</td>
+                    </tr>
+
+                    <!-- Diğer veriler -->
+                </tbody>
+            </table>
+
+
+        </div>
+    </div>
+
+</body>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-logo">
+            <a href="index.html">
+                <img src="Assets/BurkadLogo.jpg" class="logo">
+            </a>
+        </div>
+        <div class="footer-menu" style="margin-right: 140px;">
+            <ul>
+                <li><a href="index.html">Anasayfa</a></li>
+                <li><a href="kurumsal.html">Kurumsal</a></li>
+                <li><a href="projeler.html">Projeler</a></li>
+                <li><a href="uygulamalar.html">Uygulamalar</a></li>
+                <li><a href="makineparkımız.html">Makina Parkımız</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+
+
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/burkad.insaat/?igshid=OGQ5ZDc2ODk2ZA%3D%3D"><i
+                        class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-contact">
+            </br>
+            <div class="map">
+                <!-- Google Haritalar iframe'i -->
+
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3061.3785466860945!2d32.6344159!3d39.8881562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d33950db660fe1%3A0x2fe27d57dad7222!2zQmHEn2zEsWNhLCBNZXJtZXJvxJ9sdSBDZC4gTm86NjYvIEMgRDoxLCAwNjc5MCBFdGltZXNndXQvQW5rYXJh!5e0!3m2!1str!2str!4v1694541706465!5m2!1str!2str"
+                    width="500" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</html>

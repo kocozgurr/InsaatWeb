@@ -1,0 +1,421 @@
+/* Genel stil ayarları */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+.container2 {
+
+    /* Arkaplan rengi */
+    color: #333;
+    /* Metin rengi */
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    /* Boşluk ayarı */
+    z-index: 1;
+
+
+    transition: height 0.3s;
+
+
+    /* Ekranın üstünde sabit kalacak */
+    background-color: #ffffff;
+    /* İstediğiniz arkaplan rengi */
+    z-index: 100;
+    /* Diğer öğelerin üzerinde olacak */
+
+
+
+}
+
+
+
+/* Başlık stil ayarları */
+header {
+
+    background-color: black;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+
+    /* Animasyon süresi ve geçiş türü */
+}
+
+/* Menü stil ayarları */
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+    color: #dccdeb;
+}
+
+/* Telefon numarası ve arama çubuğu stilleri */
+.phone-number {
+
+    text-align: right;
+    /* Telefon numarasını sağa dayalı yapar */
+    margin-right: 20px;
+    /* Telefon numarası ile arama çubuğu arasında boşluk bırakır */
+}
+
+.phone-number a {
+    text-decoration: none;
+    color: #d2aeae;
+}
+
+.phone-number a:hover {
+    text-decoration: underline;
+    font-size: larger;
+}
+
+.search-bar {
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.search-bar button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.logo {
+    border-radius: 10%;
+    margin-top: -50px;
+}
+
+
+
+
+/* Logo stil ayarları */
+.logo_div {
+    float: left;
+    /* Logoyu sola yapıştırır */
+}
+
+.logo {
+    max-width: 300px;
+    /* İsteğinize bağlı olarak logo genişliğini ayarlayabilirsiniz */
+    height: auto;
+    /* Oranları korumak için yüksekliği otomatik ayarlar */
+}
+
+/* Menü stil ayarları */
+.menu2 {
+    float: right;
+
+    /* Menüyü sağa yapıştırır */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+
+
+}
+
+
+.menu2 a {
+    text-decoration: none;
+    color: #333;
+    /* Menü metin rengi */
+
+}
+
+.menu2 a:hover {
+    text-decoration: underline;
+
+
+
+}
+
+.menu2 {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: larger;
+
+}
+
+.menu2 li {
+
+    display: inline;
+    margin-right: 20px;
+    position: relative;
+    padding: 10px;
+    /* Alt menüyü göstermek için üst menüye göre pozisyonu ayarlar */
+}
+
+.menu2 a {
+    text-decoration: none;
+    color: #333;
+    /* Menü metin rengi */
+}
+
+.menu2 a:hover {
+    text-decoration: underline;
+}
+
+/* Alt menü stil ayarları */
+.submenu {
+    border-radius: 22px;
+    display: none;
+    /* Başlangıçta alt menüyü gizler */
+    position: absolute;
+    top: 100%;
+    /* Üst menünün altına yerleştirir */
+    left: 0;
+    background-color: #cee0f3;
+    /* Alt menü arka plan rengi */
+    border: 1px solid #ddd;
+    /* Alt menü kenarlık rengi */
+    padding: 10px 0;
+    z-index: 44;
+    /* Diğer öğelerin üzerine çıkarır */
+}
+
+.menu2 .dropdown:hover .submenu {
+    display: block;
+    /* Üst menüye gelince alt menüyü gösterir */
+}
+
+.submenu li {
+    display: block;
+    margin-right: 0;
+    margin: 10px;
+    font-weight: 300;
+
+}
+
+.submenu a {
+    color: #333;
+    /* Alt menü metin rengi */
+
+}
+
+.submenu a:hover {
+    text-decoration: underline;
+    color: #5b5959;
+
+}
+
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+
+}
+
+.footer-menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Footer içerik stil ayarları */
+
+/* Footer menü stil ayarları */
+.footer-menu {
+    margin-right: 10;
+    list-style: none;
+    padding: 0;
+
+    margin: 6px;
+}
+
+.footer-menu li {
+    margin: 5px;
+
+    display: inline;
+
+}
+
+
+
+
+
+/* Sosyal medya ikonları stil ayarları */
+.social-icons {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    /* Ikonları dikey olarak sıralar lex sayesinde ve colums */
+    align-items: center;
+    /* Ikonları ortalar */
+    ;
+    float: right;
+    margin-right: 4%;
+
+
+}
+
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    float: right;
+    padding: 5px;
+    font-size: 24px
+}
+
+.footer-logo {
+    float: left;
+    margin-top: 10%;
+    margin-left: 20px;
+}
+
+/*slider altı fotolar*/
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    margin: 30px;
+}
+
+.photo {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+}
+
+.photo:hover {
+    opacity: 0.6;
+
+
+}
+
+
+
+.photo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.photo .caption {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/*tanıtım foto acıklama*/
+.backgroundac {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+
+}
+
+.backgroundac img {
+    width: 100%;
+    height: auto;
+    /* Oranı koru */
+    display: block;/
+}
+
+.contentac {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Ortala */
+    text-align: center;
+    /* Metni yatayda ortala */
+
+    /* Arka plan rengi ve opaklık ayarı */
+    color: white;
+    /* Metin rengi */
+    padding: 20px;
+    /* Metin iç boşluk ayarı */
+}
+
+.contentac h1 {
+    font-size: 36px;
+
+
+}
+
+.contentac p {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: "Times New Roman", Times, fantasy;
+    line-height: 40px;
+
+
+}
+
+.cont {
+    background-color: rgb(255, 255, 255);
+    height: 450px;
+    width: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: 1px solid #ffffff;
+    margin-left: 4%;
+    word-break: keep-all;
+    margin-top: 2%;
+}
+
+.cont h3 {
+    color: navy;
+}
+
+.cont p {
+    color: gray
+}
+
+.ek {
+    display: flex;
+    flex-direction: column;
+}
+
+.ek img {
+    width: 500px;
+    height: 200px;
+    object-fit: contain;
+}
+
+@media (max-width: 668px) {
+    .contentac {
+        justify-content: center;
+        text-align: center;
+        margin-left: 10%;
+
+
+    }
+
+    .contentac p {
+        font-size: 11px;
+    }
+}

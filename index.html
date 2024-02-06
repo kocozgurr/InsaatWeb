@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/styleIndex.css" type="text/css">
+    <link rel="stylesheet" href="style/slider.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Burkad Insaat</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <link rel="shortcut icon" type="image/ico" href="Assets/b.jpg">
+</head>
+<style>
+    @media only screen and (max-width: 900px) {
+
+
+        iframe {
+            width: 280px;
+        }
+
+        .slide-text {
+            background-color: transparent;
+        }
+
+        .slide-text button {
+            width: 100px;
+            height: 50px;
+            justify-content: center;
+        }
+
+        .photo {
+            border-bottom: 2px solid black;
+        }
+
+        .phone-number a {
+            visibility: collapse;
+        }
+
+        .slider-controls {
+            visibility: hidden;
+        }
+
+        .container2 {
+            height: 180px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+
+        }
+
+        .container {
+
+            text-align: center;
+            align-items: center;
+
+        }
+
+        .menu2 {
+
+
+            margin-left: 10px;
+        }
+
+        .menu2 li {
+            margin: 20px;
+
+        }
+
+        .backgroundac {
+            background-image: url("Assets/wallpaperflare.com_wallpaper.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            /* İçeriği dikeyde ve yatayda tamamen sığdırır */
+            align-items: center;
+            /* İçeriği dikeyde ortalar */
+            justify-content: center;
+            /* İçeriği yatayda ortalar */
+            text-align: center;
+            min-height: 100vh;
+            /* En az pencere yüksekliğini kapsayacak şekilde ayarlar */
+        }
+
+
+        .contentac {
+
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 800px;
+            width: 90%;
+            /* İçeriği belirli bir genişlikte tutar */
+        }
+
+        .ek {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .ek img {
+            width: 100px;
+            height: auto;
+            margin: 0 10px;
+        }
+
+
+    }
+</style>
+
+<body>
+
+    <header>
+        <section class="container1">
+            <nav class="header-container">
+                <div class="header-left">
+                    <ul class="menu">
+                        <li><a href="index.html">Anasayfa</a></li>
+                        <li><a href="kurumsal.html">Kurumsal</a></li>
+                        <li><a href="iletisim.html">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="header-right">
+                    <div class="phone-number">
+                        <a href="tel:+905555549095"><i class="fa fa-phone" aria-hidden="true"></i> 05555549095</a>
+                        <br><br>
+                        <a href="tel:+9005530291070"><i class="fa fa-phone" aria-hidden="true"></i> 05530291070</a>
+                    </div>
+                    <div class="search-bar">
+                        <input type="text" placeholder="Arama yap..." />
+                        <button><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+        <div class="container2">
+            <div class="container">
+                <div class="logo_div">
+                    <a href="index.html">
+                        <img class="logo" src="Assets/BurkadLogo.jpg" alt="Burkad inşaat" title="Burkad İnşaat" />
+                    </a>
+                </div>
+                <ul class="menu2">
+
+                    <li class="dropdown">
+                        <a href="kurumsal.html">Kurumsal</a>
+                        <ul class="submenu">
+
+                            <li><a href="kalite-politikamiz.html">Kalite Politikamız</a></li>
+                            <li><a href="iletisim.html">İnsan Kaynakları</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="projeler.html">Projeler</a>
+
+                    </li>
+                    <li><a href="uygulamalar.html">Uygulamalar</a></li>
+                    <li><a href="makineparkımız.html">Makina Parkımız</a></li>
+
+                    <li><a href="iletisim.html">İletişim</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+    <div class="slider">
+        <div class="slide">
+            <video src="Assets/Construction Commercial Cinematic Video - Trim.mp4" autoplay loop muted>
+
+            </video>
+            <div class="slide-text">
+
+                <h1>BURKAD İNŞAAT </h1>
+                <p> Bizi Daha Yakından Tanımak İster Misiniz?</p>
+                <a href="index.html"> <button class="slider-button">İncele
+                    </button></a>
+            </div>
+            <div class="slide-text">
+                <h1>Makina Parkımız</h1>
+                <p> Makina Parkımızı İncelemek İster Misiniz?</p>
+                <a href="makineparkımız.html"> <button class="slider-button">İncele </button></a>
+            </div>
+            <div class="slide-text">
+                <h1>Projeler</h1>
+                <p> Projelerimizi İncelemek İster Misiniz? </p>
+                <a href="projeler.html"> <button class="slider-button">İncele
+                    </button></a>
+            </div>
+            <div class="slide-text">
+                <h1>İletişim</h1>
+                <p> Bizimle İletişime Geçin.</p>
+                <a href="iletisim.html"> <button class="slider-button">İncele </button></a>
+            </div>
+            <div class="slide-text">
+                <h1>Uygulamalar</h1>
+                <p> Uygulamalarımızı İncelemek İster Misiniz?</p>
+                <a href="uygulamalar.html"> <button class="slider-button">İncele </button></a>
+            </div>
+
+        </div>
+
+
+    </div>
+    <div class="slider-controls">
+        <button class="prev" onclick="prevSlide()"><i class="fas fa-chevron-left"></i></button>
+        <button class="next" onclick="nextSlide()"><i class="fas fa-chevron-right"></i></button>
+    </div>
+
+    <div class="gallery">
+        <div class="cont">
+            <div class="photo"><a style="text-decoration: none;" href="kurumsal.html">
+                    <img src="Assets/kinde.png" alt="Fotoğraf 1">
+                    <div class="caption">
+                        <h3>Kurumsal </h3>
+                        <p> Bizi Daha Yakından Tanımak İster Misiniz?</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="cont">
+            <div class="photo"><a style="text-decoration: none;" href="projeler.html">
+                    <img src="Assets/proinde.png" alt="Fotoğraf 2">
+                    <div class="caption">
+                        <h3>Projeler</h3>
+                        <p>Projelerimizi İncelemek İster Misiniz?</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="cont">
+            <div class="photo"><a style="text-decoration: none;" href="uygulamalar.html">
+                    <img src="Assets/uyinde.png" alt="Fotoğraf 3">
+                    <div class="caption">
+                        <h3>Uygulamalar</h3>
+                        <p>Burkad İnşaat'ın Uygulamalarını İncelemek İster Misiniz?</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="cont">
+            <div class="photo"><a style="text-decoration: none;" href="kurumsal.html">
+                    <img src="Assets/makinde.png" alt="Fotoğraf 4">
+                    <div class="caption">
+                        <h3>Makina Parkımız</h3>
+                        <p>Makina Parkımızı İncelemek İster Misiniz?</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script src="script/slider.js"></script>
+<footer>
+    <div class="footer-content">
+        <div class="footer-logo">
+            <a href="index.html">
+                <img src="Assets/BurkadLogo.jpg" class="logo">
+            </a>
+        </div>
+        <div class="footer-menu" style="margin-right: 140px;">
+            <ul>
+                <li><a href="index.html">Anasayfa</a></li>
+                <li><a href="kurumsal.html">Kurumsal</a></li>
+                <li><a href="projeler.html">Projeler</a></li>
+                <li><a href="uygulamalar.html">Uygulamalar</a></li>
+                <li><a href="makineparkımız.html">Makina Parkımız</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+
+
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/burkad.insaat/?igshid=OGQ5ZDc2ODk2ZA%3D%3D"><i
+                        class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-contact">
+            </br>
+            <div class="map">
+                <!-- Google Haritalar iframe'i -->
+
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3061.3785466860945!2d32.6344159!3d39.8881562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d33950db660fe1%3A0x2fe27d57dad7222!2zQmHEn2zEsWNhLCBNZXJtZXJvxJ9sdSBDZC4gTm86NjYvIEMgRDoxLCAwNjc5MCBFdGltZXNndXQvQW5rYXJh!5e0!3m2!1str!2str!4v1694541706465!5m2!1str!2str"
+                    width="500" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</html>

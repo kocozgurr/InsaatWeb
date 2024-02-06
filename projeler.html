@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/styles.css" type="text/css">
+    <link rel="stylesheet" href="style/slider.css" type="text/css">
+    <link rel="shortcut icon" type="image/ico" href="Assets/b.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+    <title>Projeler</title>
+</head>
+<style>
+    @media only screen and (max-width: 900px) {
+        iframe {
+            width: 280px;
+        }
+
+        .photo {
+            border-bottom: 2px solid black;
+        }
+
+        .phone-number a {
+            visibility: collapse;
+        }
+
+        .container2 {
+            height: 200px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+
+        }
+
+        .container {
+
+            text-align: center;
+            align-items: center;
+
+        }
+
+
+        .menu2 {
+
+
+            margin-left: 10px;
+        }
+
+        .menu2 li {
+
+            padding: 20px;
+
+        }
+
+
+        .tanım {
+
+            width: 40%;
+        }
+
+        .tanım p {
+            font-size: 12px;
+            margin-left: -30px;
+            margin-top: 10px;
+        }
+
+        .tanım h1 {
+            font-size: 16px;
+            margin-left: -30px;
+        }
+
+        .sidebar {
+            width: 40%;
+            margin-left: -10px;
+
+        }
+
+
+
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #c8c8c8;
+        padding: 0;
+
+    }
+
+
+
+
+    .image-container img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .image-container {
+        position: relative;
+    }
+
+    .baslik {
+        position: absolute;
+        /* Mutlak konumlandırma */
+        top: 0;
+        /* Üst kenara hizala */
+        left: 0;
+        /* Sol kenara hizala */
+        margin: 7%;
+        color: white;
+        /* Başlık metin rengi (isteğe bağlı) */
+        padding: 5px;
+        /* Başlık içeriği etrafında boşluk (isteğe bağlı) */
+    }
+
+
+
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+
+    }
+
+
+
+
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+
+    }
+
+    nav ul li:last-child {
+        margin-right: 0;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    @media only screen and (max-width: 900px) {
+        header {
+            width: 100%;
+        }
+
+        h1 {
+            font-size: medium;
+        }
+
+        .gallery {
+            display: flex;
+            flex-direction: column;
+        }
+
+
+
+        .projeler-menu {
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            height: 80px;
+            margin-left: 60px;
+
+        }
+
+        .projeler-menu ul {
+            display: flex;
+            flex-direction: column;
+            margin-left: 10px;
+            gap: 40px;
+
+        }
+
+
+        .projeler-menu ul li {
+            text-align: justify;
+            margin-top: 1px;
+
+        }
+
+        .photo p {
+            font-size: medium;
+            font-weight: 400;
+        }
+
+
+
+    }
+</style>
+<header>
+    <section class="container1">
+        <nav class="header-container">
+            <div class="header-left">
+                <ul class="menu">
+                    <li><a href="index.html">Anasayfa</a></li>
+                    <li><a href="kurumsal.html">Kurumsal</a></li>
+                    <li><a href="iletisim.html">İletişim</a></li>
+                </ul>
+            </div>
+            <div class="header-right">
+                <div class="phone-number">
+                    <a href="tel:+905555549095"><i class="fa fa-phone" aria-hidden="true"></i> 05555549095</a>
+                    <br><br>
+                    <a href="tel:+9005530291070"><i class="fa fa-phone" aria-hidden="true"></i> 05530291070</a>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Arama yap..." />
+                    <button><i class="fa fa-search" aria-hidden="true"></i></button>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <div class="container2">
+        <div class="container">
+            <div class="logo_div">
+                <a href="index.html">
+                    <img class="logo" src="Assets/BurkadLogo.jpg" alt="Burkad inşaat" title="Burkad İnşaat" />
+                </a>
+            </div>
+            <ul class="menu2">
+
+                <li class="dropdown">
+                    <a href="kurumsal.html">Kurumsal</a>
+                    <ul class="submenu">
+
+                        <li><a href="kalite-politikamiz.html">Kalite Politikamız</a></li>
+                        <li><a href="iletisim.html">İnsan Kaynakları</a></li>
+                        <li><a href="iletisim.html">İletişim</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="projeler.html">Projeler</a>
+
+                </li>
+                <li><a href="uygulamalar.html">Uygulamalar</a></li>
+                <li><a href="makineparkımız.html">Makina Parkımız</a></li>
+
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </div>
+    </div>
+
+</header>
+
+<body>
+    <div class="image-container">
+        <img class="gorsel" src="./Assets/aa.jpg" alt="Açıklama Metni">
+        <h1 class="baslik">Projeler </h1>
+
+    </div>
+    <!-- Proje içerikleri buraya gelecek -->
+    <div style="display: flex; justify-content: center; align-items: center;margin-top: 1%;">
+        <div
+            style="background-color: rgb(255, 255, 255); text-align: center; border-radius: 300px; width: 50%; padding: 20px;">
+            <h1 style="font-weight: 800; font-family: Verdana, Geneva, Tahoma, sans-serif; color: rgb(123, 127, 222);">
+                Projelerimiz</h1>
+        </div>
+    </div>
+    <div class="gallery" style="display: inline-block;">
+        <div class="photo" style="display: inline-block; position: relative; text-align: center;">
+            <img src="Assets/p1.png" alt="Fotoğraf 1">
+
+            <p
+                style="position: absolute; bottom: 10%; left: 10%; color:white; margin: 0; padding: 5px;font-size: xx-large;font-weight: 900;">
+                AMASYA GÜMÜŞHACIKÖY 2.KISIM AT VE TİGH
+            </p>
+        </div>
+    </div>
+
+
+</body>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-logo">
+            <a href="index.html">
+                <img src="Assets/BurkadLogo.jpg" class="logo">
+            </a>
+        </div>
+        <div class="footer-menu" style="margin-right: 140px;">
+            <ul>
+                <li><a href="index.html">Anasayfa</a></li>
+                <li><a href="kurumsal.html">Kurumsal</a></li>
+                <li><a href="projeler.html">Projeler</a></li>
+                <li><a href="uygulamalar.html">Uygulamalar</a></li>
+                <li><a href="makineparkımız.html">Makina Parkımız</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+
+
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/burkad.insaat/?igshid=OGQ5ZDc2ODk2ZA%3D%3D"><i
+                        class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-contact">
+            </br>
+            <div class="map">
+                <!-- Google Haritalar iframe'i -->
+
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3061.3785466860945!2d32.6344159!3d39.8881562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d33950db660fe1%3A0x2fe27d57dad7222!2zQmHEn2zEsWNhLCBNZXJtZXJvxJ9sdSBDZC4gTm86NjYvIEMgRDoxLCAwNjc5MCBFdGltZXNndXQvQW5rYXJh!5e0!3m2!1str!2str!4v1694541706465!5m2!1str!2str"
+                    width="500" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</html>
